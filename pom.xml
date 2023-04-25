@@ -35,6 +35,18 @@
             <version>1.314</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>5.0.9</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.11.0</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -47,7 +59,8 @@
                     <version>3.0.0</version>
                     <configuration>
                         <suiteXmlFiles>
-                            <suiteXmlFile>smoke-test-suite.xml</suiteXmlFile>
+                            <!--suppress UnresolvedMavenProperty -->
+                            <suiteXmlFile>${xmlFile}</suiteXmlFile>
                         </suiteXmlFiles>
                     </configuration>
 
